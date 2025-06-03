@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>プロフィール</title>
+    <style>
+        /* Body styles: Sets font, text alignment, and background color */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0; /* Remove default body margin */
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        /* Container styles: Centers the content, adds padding, background, border-radius, and shadow */
+        .container {
+            width: 90%; /* Make it more responsive for smaller screens */
+            max-width: 600px; /* Limit max width for larger screens */
+            margin: 20px auto; /* Center horizontally with vertical margin */
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+        }
+
+        /* Profile image styles: Ensures image responsiveness and circular shape */
+        .profile-image {
+            max-width: 150px; /* Smaller image size */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make the image circular */
+            margin-bottom: 20px; /* Space below the image */
+            border: 3px solid #ddd; /* Subtle border */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%; /* Wider container on smaller screens */
+                padding: 15px;
+            }
+            .profile-image {
+                max-width: 120px; /* Even smaller image on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>自己紹介</h1>
+        <img src="f_12023546.jpg" alt="プロフィール画像" class="profile-image">
+        <p><strong>名前:</strong> Takumi</p>
+        <p><strong>趣味:</strong> プログラミング、旅行、読書</p>
+        <p><strong>好きな食べ物:</strong> 寿司、ラーメン</p>
+    </div>
+</body>
+</html>
